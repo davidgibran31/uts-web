@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css"></style>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+        }
+        .home {
+            height: 100vh;
+            width: 100%;
+            background-color: #101010;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 8%;
+            padding-left: 8%;
+            background-color: #191919;
+            border-bottom: 1px solid red;
+        }
+        .logo {
+            color: white;
+            font-size: 35px;
+            letter-spacing: 1px;
+            cursor: pointer;
+        }
+        span {
+            color: red;
+        }
+        nav ul li{
+            list-style-type: none;
+            display: inline-block;
+            padding: 10px 25px;
+        }
+        nav ul li a {
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            text-transform: capitalize;
+        }
+        nav ul li a:hover {
+            color:red;
+            transition: 0.5s;
+        }
+        .btn {
+            background-color: red;
+            color: white;
+            border: 2px solid white;
+            font-weight: bold;
+            padding: 5px 15px;
+            border-radius: 30px;
+        }
+        .btn:hover {
+            transform: scale(1.2);
+            border: 2px solid red;
+            background-color: transparent;
+        }
+        .image {
+            width: 50%;
+            height: 90%;
+            position: absolute;
+            bottom: 0;
+            right: 30px;
+            transform: rotateY(180deg);
+        }
+        .image img {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            right: 23%;
+            transform: translateX(20%);
+        }
+        .content {
+            position: absolute;
+            top: 60%;
+            left: 8%;
+            transform: translateY(-50%);
+        }
+        h4 {
+            color: #fcfc;
+            letter-spacing: 2px;
+            font-size: 20px;
+        }
+        h1 {
+            color: white;
+            font-size: 65px;
+            margin: 20px 0 20px;
+        }
+        h3 {
+            color: white;
+            font-size: 25px;
+            margin-bottom: 50px;
+        }
+        .content a {
+            font-size: 20px;
+            background: red;
+            color: white;
+            display: inline-block;
+            padding: 10px 30px;
+            border-radius: 30px;
+            border: 2px solid white;
+            transition: .5s;
+        }
+        .content a:hover {
+            background: transparent;
+            border: 2px solid red;
+        }
+        .about {
+            width: 100%;
+            padding: 100px 0;
+            background-color: #191919;
+        }
+        .about-me {
+            width: 1130px;
+            max-width: 95%;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .about-me img {
+            height: auto;
+            width: 430px;
+            border-radius: 10px;
+        }
+        .about-text {
+            width: 550px;
+        }
+        .about-text h2 {
+            color: white;
+            font-size: 65px;
+            text-transform: capitalize;
+            margin-bottom: 20px;
+            border-bottom: 1px solid red;
+        }
+        .about-text h5 {
+            color: white;
+            letter-spacing: 2px;
+            font-size: 22px;
+            margin-bottom: 25px;
+            text-transform: capitalize;
+        }
+        .about-text p {
+            color: #fcfc;
+            letter-spacing: 1px;
+            line-height: 28px;
+            font-size: 18px;
+            margin-bottom: 45px;
+            text-align: justify;
+        }
+        .button {
+            background-color: blue;
+            color: white;
+            border: 2px solid;
+            font-weight: bold;
+            padding: 13px 30px;
+            border-radius: 30px;
+        }
+        .button:hover {
+            background-color: transparent;
+            border: 2px solid blue;
+            cursor: pointer;
+        }
+        .service {
+            background: #101010;
+            width: 100%;
+            padding: 100px 0;
+        }
+        .title h2 {
+            color: white;
+            font-size: 75px;
+            width: 100%;
+            margin-bottom: 30px auto;
+            text-align: center;
+        }
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 480px;
+        }
+        .card {
+            height: 365px;
+            width: 270px;
+            padding: 20px 35px;
+            background: #141414;
+            border-radius: 20px;
+            margin: 15px;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            border: 1px solid red;
+        }
+        .card i {
+            font-size: 50px;
+            display: block;
+            text-align: center;
+            margin: 25px 0;
+            color: red;
+        }
+        .card h5 {
+            color: white;
+            font-size: 23px;
+            margin-bottom: 15px;
+        }
+        .pra p {
+            color: #fcfc;
+            font-size: 16px;
+            line-height: 27px;
+            margin-bottom: 25px;
+            text-align: justify;
+        }
+        .pra p a {
+            background-color: red;
+            color: white;
+            border: 2px solid white;
+            font-weight: bold;
+            padding: 9px 22px;
+            border-radius: 30px;
+        }
+
+        .pra p a:hover {
+            background-color: transparent;
+            border: 2px solid red;
+            cursor: pointer;
+        }
+        .skill {
+            background: #191919;
+            width: 100%;
+            padding: 100px 0;
+        }
+        .skill-bar {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: white;
+        }
+        .skill-bar p {
+            text-align: left;
+        }
+        .skill-box {
+            text-align: right;
+            width: 100%;
+            background-color: white;
+        }
+        .marksman {
+            width: 95%;
+            background-color: blue;
+        }
+        .jungler {
+            width: 80%;
+            background-color: blue;
+        }
+        .mage {
+            width: 70%;
+            background-color: blue;
+        }
+        .tank{
+            width: 75%;
+            background-color: blue;
+        }
+        .action-btn {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            font-weight: 700;
+            background: #567bfb;
+            padding: 0.5em 2em;
+            border-radius: 60px;
+            margin: 1em 0;
+            transition: 0.3s;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="home">
+        <nav>
+            <h2 class="logo">Portofo<span>lio</span></h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Skill</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <a href="#" class="btn">Subscribe</a>
+        </nav>
+        <div class="image">
+            <img src="David.jpeg">
+        </div>
+        <div class="content">
+            <h4>Hello My Name Is</h4>
+            <h1>Ahmad <span>David</span> Gibran</h1>
+            <h3> I'am a University Student</h3>
+            <a href="#"><i class="fa-thin fa-user">More About Me</i></a>
+        </div>
+    </div>
+
+    <section class="about">
+        <div class="about-me">
+            <img src="online.jpeg">
+            <div class="about-text">
+                <h2>About<span>Me</span></h2>
+                <h5>University <span>Student</span></h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, recusandae!</p>
+                <a href="#" class="button">Contact Me</a>
+            </div>
+    </section>
+    <section class="service">
+        <div class="title">
+            <h2>Servi<span>ces</span</h2>
+        </div>
+        <div class="box">
+            <div class="card">
+                <i class="fas fa-bars"></i>
+                <h5>Gamers</h5>
+                <div class="pra">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores vitae quibusdam nemo laboriosam numquam quisquam atque aperiam accusantium esse ut.</p>
+                    <p style="text-align: center">
+                    <a href="#">Read More</a>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <i class="fa-duotone fa-user"></i>
+                <h5>Web Design</h5>
+                <div class="pra">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores vitae quibusdam nemo laboriosam numquam quisquam atque aperiam accusantium esse ut.</p>
+                    <p style="text-align: center">
+                    <a href="#">Read More</a>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <i class="fas fa-bars"></i>
+                <h5>University Student</h5>
+                <div class="pra">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores vitae quibusdam nemo laboriosam numquam quisquam atque aperiam accusantium esse ut.</p>
+                    <p style="text-align: center">
+                    <a href="#">Read More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="skill">
+        <div class="title">
+            <h2>Ski<span>lls</span></h2>
+        </div>
+        <div class="card">
+            <i class="fas fa-bars"></i>
+            <h5>Mobile Legend</h5>
+            <div class="skill-bar">
+                <p>Marksman</p>
+                <div class="skill-box">
+                    <div class="marksman">95%</div>    
+                </div>
+                <p>Jungler</p>
+                <div class="skill-box">
+                    <div class="jungler">80%</div> 
+                </div>   
+                <p>Mage</p>
+                <div class="skill-box">
+                    <div class="mage">70%</div>
+                </div>
+                <p>Tank</p>
+                <div class="skill-box">
+                    <div class="tank">75%</div>
+                </div>     
+            </div>
+        </div>
+    </div>
+</section>
+<a href="index.html" class="action-btn">Kembali Ke Halaman Utama</a>
+</body>
+</html>

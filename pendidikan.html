@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendidikan Dan Training</title>
+    <style type="text/css"></style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Passero+One&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Passero One', sans-serif;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: #34495e;
+        }
+        .wrapper{
+            display: flex;
+        }
+        .wrapper .text{
+            color:  #fff;
+            font-size: 60px;
+            font-weight: 400;
+        }
+        .wrapper .dynamic-text{
+            margin-left: 15px;
+            height: 90px;
+            line-height: 90px;
+            overflow: hidden;
+        }
+        .dynamic-text li{
+            list-style: none;
+            color: #e74c3c;
+            font-size: 60px;
+            font-weight: 500;
+            position: relative;
+            top: 0;
+            animation: slide 60s step(4) infinite;
+        }
+        @keyframes slide{
+            100%{
+                top: -360px;
+            }
+        }
+        .dynamic-text li span{
+            position: relative;
+            margin: 5px 0;
+            line-height: 90px;
+        }
+        .dynamic-text li span::after{
+            position: absolute;
+            content: '';
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: #34495e;
+            border-left: 2px solid #e74c3c;
+            animation: typing 5s steps(14) infinite;
+
+        }
+        @keyframes typing{
+            40%, 60%{
+                left: calc(100% + 30px);
+            }
+            100%{
+                left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div wrapper>
+        <div class="text" align="center">Cerita Saya</div>
+        <ul class="dynamic-text">
+            <li align="center"><span>Halo Teman Teman</span></li>
+            <li><span>disini saya ingin sedikit bercerita tentang pendidikan dan pelatihan yang pernah saya ikuti...Pendidikan yang telah saya tempuh tentu saja saya pernah TK,SD,SMP dan SMA dan untuk training dimasa pendidikan sebelumnya saya hanya mengkitui sedikit ekstrakulikuler...Lebih Lanjut Klik Dibawah</span></li>
+            <a href="tabelpendidikan.html">Klik</a>
+        </ul>
+    </div>
+    </ul>
+    <li align="center"><a href="index.html" class="tbl-biru">Kembali Ke Halaman Utama</a></li>
+</body>
+</html>

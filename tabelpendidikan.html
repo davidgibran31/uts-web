@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mengenal Tabel HTML</title>
+    <style>
+       body {
+        background: blanchedalmond;
+       }
+       h1 {
+        text-align: center;
+        color: Black;
+       }
+       table {
+        margin-left: auto;
+        margin-right: auto;
+       }
+       table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th {
+            background-color: skyblue;
+        }
+        th:hover{
+            background-color: blueviolet;
+        }
+        td {
+            background-color: skyblue;
+        }
+        td:hover {
+            background-color: green;
+            font-style: oblique;
+            text-decoration: underline;
+        }
+        .action-btn {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            font-weight: 700;
+            background: #567bfb;
+            padding: 0.5em 2em;
+            border-radius: 60px;
+            margin: 1em 0;
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pendidikan</h1>
+    <table border="1" cellpadding="5" cellspacing="2">
+        <tr>
+          <th>No</th>
+          <th>Nama Lengkap</th>
+          <th>Asal</th>
+          <th>Tingkat Sekolah</th>
+          <th>Alamat Sekolah</th>
+          <th>Ekstrakulikuler</th>
+        </tr>
+      
+        <tr>
+         <td>1</td>
+         <td>Ahmad David Gibran</td>
+         <td>Lahat</td>
+         <td>Taman Kanak Kanak</td>
+         <td>Lapangan PJKA,Lahat,Sumatera Selatan</td>
+         <td>Tidak Ada</td>
+        </tr>
+      
+        <tr>
+         <td>2</td>
+         <td>Ahmad David Gibran</td>
+         <td>Lahat</td>
+         <td>Sekolah Dasar</td>
+         <td>Pasar Lematang,Lahat,Sumatera Selatan</td>
+         <td>Taekwondo</td>
+        </tr>
+      
+        <tr>
+            <td>3</td>
+            <td>Ahmad David Gibran</td>
+            <td>Lahat</td>
+            <td>Sekolah Menengah Pertama</td>
+            <td>Taman Benteng,Lahat,Sumatera Selatan</td>
+            <td>Basket</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Ahmad David Gibran</td>
+            <td>Lahat</td>
+            <td>Sekolah Menengah Atas</td>
+            <td>Penghijauan,Lahat,Sumatera Selatan</td>
+            <td>Tidak Ada</td>
+        </tr>
+       </table>
+       <a href="pendidikan.html" class="action-btn">Kembali</a>
+</body>
+</html>
